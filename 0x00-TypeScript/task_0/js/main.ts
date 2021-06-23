@@ -6,7 +6,7 @@ interface Student {
 }
 
 function renderStudent(s1: Student, s2: Student) {
-	let studentsList = [
+	const studentsList = [
 		{ firstName: s1.firstName, location: s1.location },
 		{ firstName: s2.firstName, location: s2.location }
 	];
