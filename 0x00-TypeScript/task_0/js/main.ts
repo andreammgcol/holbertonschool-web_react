@@ -11,17 +11,17 @@ function renderStudent(s1: Student, s2: Student) {
 		{ firstName: s2.firstName, location: s2.location }
 	];
 
-	var table = document.createElement('table');
+	const table = document.createElement('table');
 	document.body.appendChild(table);
 
 	studentsList.forEach(function(item) {
-		var tr = table.insertRow();
+		const tr = table.insertRow();
 
-		var td1 = tr.insertCell();
-		td1.innerText = item.firstName;
+		const td1 = tr.insertCell();
+		td1.innerHTML = item.firstName;
 
-		var td2 = tr.insertCell();
-		td2.innerText = item.location;
+		const td2 = tr.insertCell();
+		td2.innerHTML = item.location;
 	});
 }
 
