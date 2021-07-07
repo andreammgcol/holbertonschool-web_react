@@ -43,6 +43,7 @@ module.exports = {
         contentBase: path.join(__dirname, './dist'),
         port:  8564,
         compress: true,
+        hot: true
     },
     plugins: [
         new HtmlWebpackPlugin(),
