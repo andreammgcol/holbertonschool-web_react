@@ -1,0 +1,35 @@
+.App {
+  text-align: left;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #fff;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  font-size: calc(7px + 2vmin);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #DE284C;
+} */
+
+/* .App-footer {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+} */
+
+hr {
+  border-color: #DE284C;
+}
+
+/* .App-body {
+  min-height: 70vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 7vh;
+  margin-top: 10vh;
+} */
