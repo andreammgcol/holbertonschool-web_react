@@ -4,7 +4,7 @@ import './Login.css';
 function Login() {
 	return (
 		<div className="Login">
-			<div className="App-body">
+			<div className="Login-body">
 				<p>Login to access the full dashboard</p>
 				<label htmlFor="email">Email:&nbsp;
 					<input type="email"></input>
