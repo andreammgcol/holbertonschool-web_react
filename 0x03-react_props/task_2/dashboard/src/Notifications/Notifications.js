@@ -2,9 +2,9 @@ import React from 'react';
 import './Notifications.css';
 import { getLatestNotification } from '../utils/utils';
 import close from './close-icon.png';
+import NotificationItem from './NotificationItem';
 
 function Notifications() {
-    const strElement = getLatestNotification();
     function handleOnClick() {
         console.log("Close button has been clicked");
     }
@@ -12,9 +12,9 @@ function Notifications() {
 		<div className="Notifications">
 			<p>Here is the list of notifications</p>
 			<ul>
-				<li data-priority="default">New course available</li>
-				<li data-priority="urgent">New resume available</li>
-				<li data-priority="urgent" dangerouslySetInnerHTML={{ __html: strElement}} />
+				<NotificationItem type="default" value="New course available"/>
+                <NotificationItem type="urgent" value="New resume available"/>
+                <NotificationItem type="urgent" html={{ __html: getLatestNotification() }} />
 			</ul>
 			<button
 				style={{
