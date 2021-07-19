@@ -6,24 +6,29 @@ import Login from '../Login/Login';
 import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
 import CourseList from '../CourseList/CourseList';
-import CourseListRow from '../CourseList/CourseListRow';
 
-function App() {
+
+function App({ isLoggedIn }) {
 	return (
 		<>
 			<Notifications displayDrawer={ true } />
 			<div className="App">
 				<Header />
 			</div >
-			<div className="App-body">
-				<Login />
-				<CourseList />
-			</div>
+			<div className="App-body">{!isLoggedIn ? <Login /> : <CourseList />}</div>
 			<div className="App-footer">
 				<Footer />
 			</div>
 		</>
 	);
 }
+
+App.defaultProps = {
+  isLoggedIn: false,
+};
+
+App.propTypes = {
+  isLoggedIn: PropTypes.bool,
+};
 
 export default App;
