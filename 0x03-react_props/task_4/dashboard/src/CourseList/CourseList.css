@@ -1,0 +1,16 @@
+table {
+	margin: 40px 0 350px 0;
+	border: 0.01rem solid gray;
+	border-collapse: collapse;
+	width: 85%;
+}
+
+th[colspan="2"] {
+	text-align: center;
+}
+
+th {
+	text-align: left;
+	border-top: 0.01rem solid gray;
+	border-bottom: 0.01rem solid gray;
+}

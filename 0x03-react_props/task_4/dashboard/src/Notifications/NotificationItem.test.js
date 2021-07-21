@@ -18,6 +18,6 @@ describe("<Notifications />", () => {
 
   it("the component accept html propertie", () => {
     const wrapper = shallow(<NotificationItem html={{ __html: "<u>test</u>" }} />);
-    expect(wrapper.find("li").html()).toEqual("<li><u>test</u></li>");
+    expect(wrapper.find("li").html()).toEqual("<li data-notification-type=\"default\"><u>test</u></li>");
   });
 });

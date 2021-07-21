@@ -6,15 +6,14 @@ import NotificationItem from './NotificationItem';
 import PropTypes from "prop-types";
 
 
-function Notifications({ displayDrawer }) {
-    console.log(displayDrawer);
+function Notifications({ displayDrawer, isLoggedIn }) {
     function handleOnClick() {
         console.log("Close button has been clicked");
     }
 	return (
 		<>
       <div className="menuItem">Your notifications</div>
-      { displayDrawer &&
+      { displayDrawer && isLoggedIn && 
         <div className="Notifications">
           <p>Here is the list of notifications</p>
           <ul>
@@ -47,10 +46,12 @@ function Notifications({ displayDrawer }) {
 
 Notifications.defaultProps = {
   displayDrawer: false,
+  isLoggedIn: false,
 };
 
 Notifications.propTypes = {
   displayDrawer: PropTypes.bool,
+  isLoggedIn: PropTypes.bool,
 };
 
 export default Notifications;

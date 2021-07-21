@@ -6,8 +6,6 @@
   display: flex;
   color: var(--redHolberton-color);
   align-items: center;
-  border-bottom: 4px solid var(--redHolberton);
-
 }
 
 .App-header img {
