@@ -10,9 +10,9 @@ import { getLatestNotification } from '../utils/utils';
 
 
 const listCourses = [
-		{ id: 1, name: 'ES6', credit: '60' },
-		{ id: 2, name: 'Webpack', credit: '20' },
-		{ id: 3, name: 'React', credit: '40' }
+		{ id: 1, name: 'ES6', credit: 60 },
+		{ id: 2, name: 'Webpack', credit: 20 },
+		{ id: 3, name: 'React', credit: 40 }
 ];
 
 const listNotifications = [
@@ -41,11 +41,13 @@ class App extends React.Component {
 }
 
 App.defaultProps = {
-	isLoggedIn: false
+	isLoggedIn: false,
+	logOut: {}
 };
 
 App.propTypes = {
-	isLoggedIn: PropTypes.bool
+	isLoggedIn: PropTypes.bool,
+	logOut: PropTypes.func
 };
 
 export default App;

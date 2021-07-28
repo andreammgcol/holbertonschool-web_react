@@ -29,7 +29,7 @@ function Notifications({ displayDrawer, isLoggedIn, listNotifications }) {
               right: 0,
               top: -120,
               backgroundColor: 'white',
-              textAlign: 'right'
+                        textAlign: 'right'
             }}
             aria-label={'Close'}
             onClick={handleOnClick}

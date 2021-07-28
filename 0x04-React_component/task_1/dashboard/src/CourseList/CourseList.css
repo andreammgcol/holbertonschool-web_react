@@ -20,7 +20,3 @@
   text-align: left;
   padding: 5px 1px 1px 3px;
 }
-
-#CourseList th, td {
-  display: table-cell;
-}

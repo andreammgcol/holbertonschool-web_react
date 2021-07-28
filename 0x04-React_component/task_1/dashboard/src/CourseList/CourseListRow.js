@@ -6,7 +6,7 @@ function CourseListRow({ isHeader, textFirstCell, textSecondCell }) {
 		if (textSecondCell === null) {
 			return (
 				<tr>
-					<th colSpan="2" className={css(styles.text)}>{textFirstCell}</th>
+					<th colSpan="2">{textFirstCell}</th>
 				</tr>
 			);
 		} else {
