@@ -1,6 +1,6 @@
 import inmutable from 'immutable';
 
-const { fromJS } = require('immutable');
+const { fromJS } = immutable;
 
 const getImmutableObject = (object) => fromJS(object);
 
