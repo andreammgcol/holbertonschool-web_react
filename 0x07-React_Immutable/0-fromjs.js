@@ -1,4 +1,4 @@
-import inmutable from 'immutable';
+import immutable from 'immutable';
 
 const { fromJS } = immutable;
 
