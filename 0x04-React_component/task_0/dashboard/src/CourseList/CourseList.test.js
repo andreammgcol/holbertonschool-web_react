@@ -24,13 +24,12 @@ describe("<CourseList />", () => {
   it('CourseList renders correctly', () => {
     let wrapper = shallow(<CourseList listCourses={[]}/>);
     expect(wrapper.find(CourseListRow)).toHaveLength(3);
-    // wrapper = shallow(<CourseList />);
     expect(wrapper.find(CourseListRow)).toHaveLength(3);
   });
 
   it('Component renders correctly', () => {
     const wrapper = shallow(<CourseList listCourses={listCourses}/>);
-    expect(wrapper.find(CourseListRow).first().html()).toEqual('<tr><th>Available courses</th></tr>');
+    expect(wrapper.find(CourseListRow).first().html()).toEqual('<tr><th colSpan=\"2\">Available courses</th></tr>');
     expect(wrapper.find(CourseListRow)).toHaveLength(5);
   });
 });
