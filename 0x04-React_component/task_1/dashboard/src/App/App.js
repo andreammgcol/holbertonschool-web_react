@@ -22,6 +22,30 @@ const listNotifications = [
 ];
 
 class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.logoutListener = this.logoutListener.bind(this);
+  	}
+
+	logoutListener(event) {
+		if (event.ctrlKey && event.key === 'h') {
+			alert('Logging you out');
+			this.props.logOut();
+    	}
+	}
+
+	componentDidMount() {
+		if (typeof window === 'object') {
+			document.addEventListener("DomContentLoader", function () {
+				('keydown', this.logoutListener);
+			});
+		}
+	}
+
+	componentWillUnmount() {
+		document.removeEventListener('keydown', this.logoutListener);
+	}
+
 	render () {
 		return (
 		<>
@@ -41,11 +65,13 @@ class App extends React.Component {
 }
 
 App.defaultProps = {
-	isLoggedIn: false
+	isLoggedIn: false,
+	logOut: () => {}
 };
 
 App.propTypes = {
-	isLoggedIn: PropTypes.bool
+	isLoggedIn: PropTypes.bool,
+	logOut: PropTypes.func
 };
 
 export default App;
