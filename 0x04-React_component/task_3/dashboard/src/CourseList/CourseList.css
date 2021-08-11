@@ -1,0 +1,26 @@
+#CourseList {
+  margin: 4% 0% 30% 4%;
+  border: 1px solid gray;
+  border-collapse: collapse;
+  width: 91%;
+}
+
+#CourseList th {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  text-align: left;
+  padding: 5px 1px 5px 3px;
+}
+
+#CourseList th[colSpan="2"] {
+  text-align: center;
+}
+
+#CourseList td {
+  text-align: left;
+  padding: 5px 1px 1px 3px;
+}
+
+#CourseList th, td {
+  display: table-cell;
+}

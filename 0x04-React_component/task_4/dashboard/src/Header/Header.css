@@ -1,0 +1,14 @@
+:root {
+  --redHolberton: #DE284C;
+}
+
+.App-header {
+  display: flex;
+  color: var(--redHolberton-color);
+  align-items: center;
+}
+
+.App-header img {
+  width: 200px;
+  height: 200px;
+}
