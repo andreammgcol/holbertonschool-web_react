@@ -12,3 +12,5 @@ ___
 - How to optimize performance and control which components to render
 
 #### Tasks
+
+#### Author
